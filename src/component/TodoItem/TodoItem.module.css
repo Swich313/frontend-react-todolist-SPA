@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&family=Open+Sans:wght@400;700&family=Roboto&display=swap");
+.todo_item {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.todo_item__checkbox-rect {
+  margin: 0.5em;
+}
+.todo_item__checkbox-rect input[type=checkbox] {
+  display: none;
+}
+.todo_item__checkbox-rect input[type=checkbox] + label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  max-width: 75%;
+}
+.todo_item__checkbox-rect input[type=checkbox] + label:last-child {
+  margin-bottom: 0;
+}
+.todo_item__checkbox-rect input[type=checkbox] + label:before {
+  content: "";
+  display: block;
+  width: 1.4em;
+  height: 1.4em;
+  border: 1px solid #343a3f;
+  border-radius: 0.2em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.2s, background 0.2s ease-in-out;
+  transition: all 0.2s, background 0.2s ease-in-out;
+  background: #f3f3f3;
+}
+.todo_item__checkbox-rect input[type=checkbox]:hover + label:hover {
+  text-shadow: 2px 2px 8px rgba(150, 150, 150, 0.5), 4px 4px 16px rgba(150, 150, 150, 0.4);
+}
+.todo_item__checkbox-rect input[type=checkbox]:hover + label::before {
+  background: #50565a;
+  box-shadow: inset 0 0 0 2px #f7f2f2;
+}
+.todo_item__checkbox-rect input[type=checkbox]:checked + label:before {
+  width: 1.3em;
+  height: 1.3em;
+  border-radius: 0.2em;
+  border: 2px solid #fff;
+  transform: rotate(90deg);
+  background: #50565a;
+  box-shadow: 0 0 0 1px #000;
+}
+.todo_item__text {
+  font-size: 16px;
+  padding-bottom: 0;
+  margin: 0 1em 1em 2.7em;
+}
+.todo_item__text p {
+  margin: 0;
+}
+.todo_item__text .time_hide {
+  display: none;
+}
+.todo_item .close_btn {
+  font-size: inherit;
+  width: 1.4em;
+  height: 1.4em;
+  border: 1px solid #343a3f;
+  border-radius: 0.2em;
+  line-height: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.todo_item .close_btn__tooltip {
+  font-size: 14px;
+  width: 160px;
+  background-color: #fff;
+  border: 1px solid #343a3f;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -80px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
+}
+.todo_item .close_btn__tooltip:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+.todo_item .close_btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bg__home {
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+.bg__work {
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+.bg__hobby {
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+.bg__other {
+  background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+}
+.bg__default {
+  background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+}
+.bg__done {
+  background-color: #ff2424;
+}
+
+.crossed {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.tooltip_visible {
+  visibility: visible;
+}
+
+.tooltip_invisible {
+  visibility: hidden;
+}
+
+/*# sourceMappingURL=TodoItem.module.css.map */
