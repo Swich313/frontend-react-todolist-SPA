@@ -10,6 +10,8 @@
   "addForm_type_default": "Choose option...",
   "addForm_button": "Add todo",
   "filters_title": "Filter your todos",
+  "filters_add_new_filter": "Add new type",
+  "filters_add_new_filter_placeholder": "Enter new type",
   "filter_all": "all",
   "filter_home": "home",
   "filter_work": "work",

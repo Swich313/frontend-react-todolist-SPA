@@ -4,8 +4,10 @@ import i18n from 'i18next';
 import {initReactI18next} from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
+import {Provider} from 'react-redux';
 
 import App from './App'
+import store from "../../new todoList/src/store/index.js";
 
 import './index.css'
 
@@ -27,6 +29,8 @@ i18n
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+      <Provider store={store}>
+          <App />
+      </Provider>
   </React.StrictMode>,
 )

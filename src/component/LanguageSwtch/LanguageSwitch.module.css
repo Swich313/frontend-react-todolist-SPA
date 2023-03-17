@@ -3,6 +3,7 @@
   text-align: left;
   cursor: pointer;
   z-index: 50;
+  position: absolute;
 }
 .switch_lang:hover .lang_dropdown {
   display: block;
@@ -28,6 +29,7 @@
 }
 
 .lang_dropdown {
+  position: absolute;
   display: none;
   background-color: #dee2e6;
   margin-top: 2px;

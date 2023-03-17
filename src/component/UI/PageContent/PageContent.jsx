@@ -1,9 +1,8 @@
 import classes from './PageContent.module.css';
 
-const PageContent= ({title, children}) => {
+const PageContent= ({children, className}) => {
     return (
-        <div className={classes.content}>
-            <h1>{title}</h1>
+        <div className={`${classes.content} ${className}`}>
             {children}
         </div>
     );

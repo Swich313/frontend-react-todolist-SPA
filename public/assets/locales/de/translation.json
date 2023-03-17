@@ -10,6 +10,8 @@
   "addForm_type_default": "Option wählen...",
   "addForm_button": "Aufgabe hinzufügen",
   "filters_title": "Filtern Sie Ihre Aufgaben",
+  "filters_add_new_filter": "Neuen Typ hinzufügen",
+  "filters_add_new_filter_placeholder": "Neuen Typ eingeben",
   "filter_all": "alle",
   "filter_home": "Heimat",
   "filter_work": "Arbeit",

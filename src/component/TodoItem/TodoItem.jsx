@@ -11,7 +11,7 @@ const handleDate = date => {
     return `${date.getDate()} ${months.at(date.getMonth())} ${date.getFullYear()}`;
 }
 
-const TodosListItem = props => {
+const TodoItem = props => {
     const {
         title,
         description,
@@ -46,7 +46,7 @@ const TodosListItem = props => {
             typeClassName = `bg__${type}`;
             break;
         default:
-            typeClassName = 'bg__default';
+            typeClassName = 'bg__other';
     }
 
     const closeBtnHandler = () => {
@@ -70,7 +70,7 @@ const TodosListItem = props => {
 
     return (
 
-        <li className={classes.todo_item}>
+        <li className={classes.todo_item} key={id}>
             <Card styles={classes[typeClassName]}>
                 <div className={classes["todo_item__checkbox-rect"]} onClick={onCompleteTodo}>
                     <input type="checkbox" id={id} name="check" checked={isCompleted} onChange={onCompleteTodo}/>
@@ -81,7 +81,7 @@ const TodosListItem = props => {
                 <div className={`${classes.todo_item__text} ${isCompleted ? classes.crossed : null}`}>
                     {description}
                     <p className={deadline ? null : classes.time_hide}>
-                        {t('deadline_text')} {Date.parse(deadline) > Date.parse(new Date()) ? `${deadline}` : deadline === currentDateString ? `${deadline} ${t('deadline_today')}`: `${deadline} ${t('deadline_outdated')}`}
+                        {t('deadline_text')} {Date.parse(deadline) > Date.parse(Date.now()) ? `${deadline}` : deadline === currentDateString ? `${deadline} ${t('deadline_today')}`: `${deadline} ${t('deadline_outdated')}`}
                     </p>
                 </div>
                 <button type="button" className={classes.close_btn} aria-label="Close" onClick={closeBtnHandler} >x
@@ -92,4 +92,4 @@ const TodosListItem = props => {
     )
 }
 
-export default TodosListItem;
+export default TodoItem;
