@@ -8,7 +8,7 @@ const RootLayout = () => {
             <MainNavigation />
             <Outlet />
         </>
-    );
+                );
 };
 
 export default RootLayout;

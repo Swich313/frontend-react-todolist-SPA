@@ -10,6 +10,8 @@
   "addForm_type_default": "Scegli l'opzione...",
   "addForm_button": "Aggiungi da fare",
   "filters_title": "Filtra le cose da fare",
+  "filters_add_new_filter": "Aggiungi nuovo tipo",
+  "filters_add_new_filter_placeholder": "Inserisci un nuovo tipo",
   "filter_all": "tutta",
   "filter_home": "casa",
   "filter_work": "opera",

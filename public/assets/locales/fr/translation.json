@@ -10,6 +10,8 @@
   "addForm_type_default": "Choisissez l'option...",
   "addForm_button": "Ajouter une tâche",
   "filters_title": "Filtrez vos tâches",
+  "filters_add_new_filter": "Ajouter un nouveau type",
+  "filters_add_new_filter_placeholder": "Entrer un nouveau type",
   "filter_all": "toute",
   "filter_home": "domicile",
   "filter_work": "travailler",

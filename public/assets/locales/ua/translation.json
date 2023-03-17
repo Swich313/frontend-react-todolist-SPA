@@ -10,6 +10,8 @@
   "addForm_type_default": "Виберіть варіант...",
   "addForm_button": "Додати справу",
   "filters_title": "Відсортуйте справи",
+  "filters_add_new_filter": "Додайте новий тип",
+  "filters_add_new_filter_placeholder": "Введіть новий тип",
   "filter_all": "всі",
   "filter_home": "дім",
   "filter_work": "робота",
