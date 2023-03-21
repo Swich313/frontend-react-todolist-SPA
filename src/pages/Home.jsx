@@ -8,12 +8,12 @@ import Pagination from "../component/UI/Pagination/Pagination.jsx";
 import TodoAddForm from "../component/TodoAddForm/TodoAddForm.jsx";
 import TodosFilters from "../component/TodosFilters/TodosFilters.jsx";
 import $api from "../utils/axiosFetcher.js";
-import {fetchTodos} from "../../../new todoList/src/store/todoSlice.js";
-import {fetchFilters, resetInputs} from "../../../new todoList/src/store/filterSlice.js";
-import store from "../../../new todoList/src/store/index.js";
+import {fetchFilters, resetInputs} from "../store/filterSlice";
+import store from "../store/authSlice";
 
 
 import PageContent from "../component/UI/PageContent/PageContent.jsx";
+import {fetchTodos} from "../store/todoSlice.js";
 
 
 const HomePage = () => {
@@ -25,6 +25,7 @@ const HomePage = () => {
     console.log(data)
 
     useEffect(() => {
+
         dispatch(fetchTodos(activeFilter))
             .then(res => {
             const data = res.payload;

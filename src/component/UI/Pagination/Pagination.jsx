@@ -2,7 +2,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {useState} from "react";
 import {NavLink} from "react-router-dom";
 
-import {setCurrentPage, incrementCurrentPage, decrementCurrentPage, fetchTodos} from "../../../../../new todoList/src/store/todoSlice.js";
+import {setCurrentPage, incrementCurrentPage, decrementCurrentPage, fetchTodos} from "../../../store/todoSlice";
 
 import classes from './Pagination.module.scss';
 

@@ -1,7 +1,7 @@
 import {Form, NavLink} from 'react-router-dom';
 import {useDispatch, useSelector} from "react-redux";
 
-import {logout, setLogout} from '../../../../new todoList/src/store/authSlice.js';
+import {logout, setLogout} from '../../store/authSlice';
 
 import LanguageSwitch from "../LanguageSwtch/LanguageSwitch.jsx";
 import classes from './MainNavigation.module.css';

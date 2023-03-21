@@ -14,7 +14,7 @@ const DUMMY_TODOS = [
 ];
 
 const initialState = {
-    todos: [DUMMY_TODOS],
+    todos: [],
     perPage: 4,
     sort: -1,
     todosTotalQuantity: 0,
