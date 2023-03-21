@@ -7,7 +7,7 @@ import HttpApi from 'i18next-http-backend';
 import {Provider} from 'react-redux';
 
 import App from './App'
-import store from "../../new todoList/src/store/index.js";
+import store from "./store/index";
 
 import './index.css'
 

@@ -1,4 +1,4 @@
-import {updateTodo, deleteTodo} from '../../../../new todoList/src/store/todoSlice.js';
+import {updateTodo, deleteTodo} from '../../store/todoSlice';
 import TodoItem from "../TodoItem/TodoItem.jsx";
 import Spinner from '../UI/Spinner/Spinner.jsx';
 import classes from './TodoList.module.scss';
@@ -34,7 +34,10 @@ const TodosList = () => {
         } else if (arr.length === 0){
             return <h5 style={style}>{t('no_completed_todo_yet')}</h5>
         }
+        console.log({arr})
+
         return arr.map(({_id, title, description, todoType, deadline, isCompleted, isArchived}) => {
+
             return <TodoItem title={title}
                              type={todoType}
                              description={description}
@@ -50,7 +53,6 @@ const TodosList = () => {
     };
 
     const elements = renderTodoList(todos);
-    console.log({elements})
     return (
         <ul>
             {todosLoadingStatus === 'error' && <h5 style={style}>{t('downloading_error')}</h5>}

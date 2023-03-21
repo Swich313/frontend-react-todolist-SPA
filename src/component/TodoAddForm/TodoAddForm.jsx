@@ -4,7 +4,7 @@ import useInput from '../../hooks/use-input.js';
 import {useTranslation} from "react-i18next";
 import {useActionData, useNavigation, Form} from "react-router-dom";
 
-import {closeAddNewFilterMode, addNewFilterMode, notResetInputs, fetchFilters} from "../../../../new todoList/src/store/filterSlice.js";
+import {closeAddNewFilterMode, addNewFilterMode, notResetInputs, fetchFilters} from "../../store/filterSlice.js";
 
 import classes from './TodoAddForm.module.scss';
 import Card from "../UI/Card/Card.jsx";

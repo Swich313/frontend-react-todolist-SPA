@@ -1,12 +1,11 @@
 import {Link, useSearchParams, useNavigate} from "react-router-dom";
-import {setAuthError} from '../../../../new todoList/src/store/authSlice.js';
 import {useDispatch, useSelector} from "react-redux";
 import Card from "../UI/Card/Card.jsx";
 import useInput from "../../hooks/use-input.js";
 import {authBodyHandler, authButtonNameHandler} from '../../utils/auth.js';
-import {login, signup, resetPassword} from '../../../../new todoList/src/store/authSlice.js';
 
 import classes from "./AuthForm.module.css";
+import {login, setAuthError, signup, resetPassword} from "../../store/authSlice.js";
 const AuthForm = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();

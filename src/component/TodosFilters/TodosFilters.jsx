@@ -1,12 +1,11 @@
 import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {useTranslation} from "react-i18next";
-import {changeActiveFilter} from "../../../../new todoList/src/store/filterSlice.js"
+import {changeActiveFilter} from "../../store/filterSlice"
 // import {setCurrentPage} from "../../store/filterSlice.js;
 import Spinner from "../UI/Spinner/Spinner.jsx";
 
 import classes from './TodosFilters.module.scss'
-import {setCurrentPage} from "../../../../new todoList/src/store/todoSlice.js";
 import Card from "../UI/Card/Card.jsx";
 
 
